@@ -12,8 +12,17 @@
             book1.Title = "sports";
             book1.Pages = 100;
             Console.WriteLine(obj1);
-            //Console.WriteLine($"{book1.title},{book1.page}");
+
             #endregion
+            #region Question2
+            // Q02. Using the Book class above, print the result of calling ToString(), Equals() (compare book with
+            //itself), GetHashCode(), and GetType() on book
+            Console.WriteLine(obj1.ToString());
+            Console.WriteLine(obj1.Equals(obj1));
+            Console.WriteLine(obj1.GetHashCode());
+            Console.WriteLine(obj1.GetType());
+            #endregion
+
         }
     }
 }
