@@ -82,9 +82,19 @@ namespace Assiment1
             #region Question9
             //Q09. Given int pages = 464;, convert it into a string using ToString() and print its type using GetType()
             //to prove it's now a string
-            int Pages = 464;
-            string page = Pages.ToString();
-            Console.WriteLine(page.GetType());
+            //int Pages = 464;
+            //string page = Pages.ToString();
+            //Console.WriteLine(page.GetType());
+            #endregion
+            #region Question10
+            //Q11. Declare an int? year = null;. Print whether it has a value, then assign it 2023 and print its value.
+            int? year = null;
+            if (year == null)
+            {
+                Console.WriteLine("it has not a value");
+            }
+            year = 2023;
+            Console.WriteLine(year);
             #endregion
 
         }
