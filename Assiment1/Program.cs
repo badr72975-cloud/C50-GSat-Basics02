@@ -51,10 +51,10 @@ namespace Assiment1
             //int Pages = 300;
             //double x = pages;
             #endregion
-            #region Question5
+            #region Question6
             //Q06. Declare a double price = 49.99; then convert it into an int using a cast.
-            double price = 49.99;
-            int x = (int)price;
+            //double price = 49.99;
+            //int x = (int)price;
 
             #endregion
 
