@@ -1,4 +1,6 @@
-﻿using System.Numerics;
+﻿using System.Drawing;
+using System.Numerics;
+using System.Runtime.Intrinsics.X86;
 using System.Timers;
 
 namespace Assiment1
@@ -53,8 +55,28 @@ namespace Assiment1
             #endregion
             #region Question6
             //Q06. Declare a double price = 49.99; then convert it into an int using a cast.
-            double price = 49.99;
-            int x = (int)price;
+            //double price = 49.99;
+            //int x = (int)price;
+
+            #endregion
+            #region Question7
+            //Q07. Given string pagesText = "464";, convert it into an int using the Convert class
+            //string pagesText = "464";
+            //int y = Convert.ToInt32(pagesText);
+            // Console.WriteLine(y.GetType());
+            #endregion
+            #region Question8
+            //Q08. Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";,
+            //use int.TryParse() to safely try converting it, and print "Invalid number" if it fails
+            string yearText = "2023";
+            int year=int.Parse(yearText);
+
+            string badText = "abc";
+            bool text = int.TryParse(badText, out int x);
+            if (text== false)
+            {
+                Console.WriteLine("Invalid number");
+            } 
 
             #endregion
 
